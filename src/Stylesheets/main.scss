@@ -1,0 +1,16 @@
+.section-one{
+
+    width: 90%;
+    margin: auto;
+    >a{
+
+        >img{
+            width: 100%;
+            height: unset;
+        }
+    }
+    >img{
+        width: 100%;
+        height: unset;
+    }
+}

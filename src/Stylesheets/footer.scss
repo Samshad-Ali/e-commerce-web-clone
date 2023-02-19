@@ -1,0 +1,151 @@
+.footer {
+  *h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  margin-top: 2.5rem;
+  width: 100%;
+  padding: 2rem 2rem;
+  background-color: #fafafa;
+  font-family: $Open-text;
+  display: flex;
+  align-items: flex-start;
+  > .left-side {
+    flex-basis: 50%;
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+    > .upper-section {
+      display: flex;
+      gap: 2rem;
+      > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.35rem;
+        > a {
+          color: rgb(103, 103, 103);
+          transition: all 0.3s ease;
+          font-size: 0.8rem;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+    > .lower-section {
+      color: rgb(103, 103, 103);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+      > ul {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        > li {
+          font-size: 0.75rem;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  > .right-side {
+    flex-basis: 50%;
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    > .first-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      > .left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        > .icon {
+          padding: 0.5rem;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          > a {
+            color: $secodary-clr;
+            > svg {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+      > .right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        > .icon {
+          padding: 0.5rem;
+          display: flex;
+          gap: 1rem;
+          > a {
+            color: $secodary-clr;
+            > svg {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+    > .middle-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      > div {
+        height: 6vh;
+        margin-bottom: 1rem;
+        > input {
+          height: 6vh;
+          width: 70%;
+          outline: none;
+          border: 0.5px solid silver;
+          background-color: white;
+          padding-left: 1rem;
+        }
+        > button {
+          cursor: pointer;
+          background-color: black;
+          color: white;
+          padding: 0.5rem 1rem;
+          border: none;
+          height: 6vh;
+          font-size: 0.9rem;
+          font-weight: 700;
+          transition: all 0.5s;
+          &:hover {
+            background-color: silver;
+          }
+        }
+      }
+    }
+    > .last-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      > div {
+        display: flex;
+        gap: 1rem;
+        padding: 0rem 1rem;
+        flex-wrap: wrap;
+        cursor: pointer;
+        > img {
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

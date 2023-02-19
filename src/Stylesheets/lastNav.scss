@@ -1,0 +1,83 @@
+.last-nav{
+    margin-inline: auto;
+    width: 90%;
+    background: linear-gradient(to top ,#ececec,#e0f2fd);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    padding:.4rem;
+    margin-bottom: 1rem;
+    >div{
+        font-family: $Nunito-text;
+        text-transform: uppercase;
+        padding: 0 2rem;
+        color: #222;
+        &:nth-child(1){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >span{
+                align-self: center;
+                font-size: .6rem;
+            }
+            >h2{
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: .8rem;
+                margin-inline: .5rem;
+                >p{
+                    font-size: .9rem;
+                    font-weight: 900;
+                }
+                >span{
+                    font-size: .48rem;
+                    font-weight: 800;
+                }
+            }
+        }
+        &:nth-child(2)
+        {
+            border-right: .1px solid rgb(64, 64, 64);
+            border-left: 0.1px solid rgb(86, 86, 86);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >h2{
+            font-size: .9rem;
+            font-weight: 700;
+        }
+    }
+    &:nth-child(3)
+    {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            font-size: .9rem;
+            font-weight: 700;
+            >span{
+                font-size: .48rem;
+                font-weight: 800;
+            }
+        }
+    }
+    &:nth-child(4)
+    {
+        border-left: .1px solid rgb(73, 73, 73);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >h2{
+        font-size: .9rem;
+        font-weight: 700;
+    }
+    }
+}
+}

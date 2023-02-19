@@ -1,0 +1,9 @@
+.slider{
+    width: 90%;
+    margin: auto;
+    >img{
+        width: 100%;
+        height: unset;
+        object-fit: contain;
+    }
+}

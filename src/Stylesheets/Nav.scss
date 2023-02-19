@@ -1,0 +1,132 @@
+.navContainer {
+    box-shadow: 0px 0px 10px #c9c9c9;
+    display: flex;
+    flex-direction: column;
+  width: 100%;
+  font-family: $Open-text;
+  font-weight: 300;
+  margin-top: -3px;
+  > nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+
+    > a {
+      flex-basis: 5%;
+      padding: 1rem 1rem;
+      color: black;
+      font-weight: 500;
+    }
+    > div {
+      flex-basis: 95%;
+      background-color: $primary-clr;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+        padding: .5rem .5rem;
+      > ul {
+        display: flex;
+        flex-basis: 30%;
+        align-items: center;
+        gap: 1.2rem;
+        > a {
+          font-weight: 500;
+          color: rgb(101, 100, 100);
+          transition: all 0.3s;
+          text-transform: uppercase;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+      > h1 {
+        font-size: 2.5rem;
+        font-family: $Open-text;
+        font-weight: 600;
+        letter-spacing: 3px;
+      }
+      >.left-side{
+        flex-basis: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        >p{
+            font-size: .8rem;
+            color: red;
+            font-weight: 500;
+            >span{
+                color: black;
+            }
+        }
+        > div {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          > p {
+            position: relative;
+            > svg {
+              font-size: 1.3rem;
+              color: rgb(101, 100, 100);
+              font-weight: 900;
+            }
+            > span {
+                position: absolute;
+                color: rgb(101, 100, 100);
+               top: 0;
+               font-weight: 500;
+               left: 110%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mini-nav{
+    padding: .5rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >ul{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        text-transform: uppercase;
+        >li{
+            font-size: .79rem;
+            font-family: $Nunito-text;
+            font-weight: 600;
+            cursor: pointer;
+            color: $secodary-clr;
+            &:nth-child(4){
+                color: rgb(255, 0, 85);
+            }
+        }
+    }
+    
+    >div{
+        display: flex;
+        align-items: center;
+        >input{
+            height: 6vh;
+            outline: none;
+            border: 1px solid rgb(175, 175, 175);
+            padding-left: .5rem;
+        }
+        >button{
+            display: grid;
+            place-items: center;
+            background-color: black;
+            border: 1px solid black;
+            height: 6vh;
+            padding: .5rem;
+            color: white;
+            cursor: pointer;
+            >svg{
+                font-size: 1.1rem;
+            }
+                }
+    }
+}
